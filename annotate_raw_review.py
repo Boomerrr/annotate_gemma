@@ -8,16 +8,15 @@ model = args[1]
 tokenizer = AutoTokenizer.from_pretrained(model)
 model = AutoModelForCausalLM.from_pretrained(model, device_map="auto")
 
-
 input_file_path = "./raw_data.txt"
 
-raw_generation_file_path = "./raw_generation_output_ten-shot.txt"
+raw_generation_file_path = "./raw_generation_output_ten-shot_gemma.txt"
 
-output_file_path = "./raw_data_output_ten-shot.txt"
+output_file_path = "./raw_data_output_ten-shot_gemma.txt"
 
 with open(input_file_path,"r",encoding="utf-8") as file:
     input_data = file.readlines()
-input_data = input_data[:5]
+# input_data = input_data[:5]
 
 requirement_prompt = """Assuming you are a software requirements analyst 
 you are categorizing user comments into three categories (bug report, feature request, and irrelevant information).
