@@ -18,7 +18,7 @@
 `python annotate_raw_review.py ./model-7b `
 
 ### 得到模型原始生成文本  
-`./raw_generation_output_ten-shot.txt`  
+`./raw_generation_output_ten-shot_gemma.txt`  
 
 ### 得到标注文件   
 `./raw_data_output_ten-shot_gemma.txt`  
