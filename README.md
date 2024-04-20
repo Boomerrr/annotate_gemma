@@ -1,5 +1,5 @@
 # 快速开始
-## step1：下载模型(自动加载可跳过)  
+## step1：下载模型
 `falcon模型下载地址 https://huggingface.co/google/gemma-7b`  
 
 ### 模型文件存放位置  
@@ -16,9 +16,6 @@
 ## step3：运行代码文件  
 ### 本地加载模型 运行程序
 `python annotate_raw_review.py ./model-7b `
-
-### 自动加载模型 运行程序
-`python annotate_raw_review.py google/gemma-7b`  
 
 ### 得到模型原始生成文本  
 `./raw_generation_output_ten-shot.txt`  
