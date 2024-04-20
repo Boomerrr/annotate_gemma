@@ -6,7 +6,7 @@
 `./model-7b`  
 
 ## step2：安装依赖环境 
-### 创建conda环境(可用falcon同一环境)
+### 创建conda环境(可用falcon同一环境，FalconEnvi)
 `conda create -n GemmaEnvi python=3.8.10`
 ### 激活conda环境
 `conda activate GemmaEnvi `
