@@ -62,11 +62,12 @@ with open(output_file_path,"w",encoding='utf-8') as output_file,\
         input_text = requirement_prompt +"\n"+ content.strip() + "->"
         input_ids = tokenizer(input_text, return_tensors="pt").to("cuda")
         outputs = model.generate(**input_ids, max_new_tokens=10)
+        
         raw_generation = tokenizer.decode(outputs[0]).split("->")[-1]
         result = raw_generation.split("\n")[0]
-        print(result)
         output_line = f"{content}\t{result}\n"
         output_file.write(output_line)
         raw_generation_output_file.write(raw_generation + "\n")
+        print(result)
 
 print(" annotate over ! ")
