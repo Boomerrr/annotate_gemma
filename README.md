@@ -18,9 +18,9 @@
 `python annotate_raw_review.py ./model-7b `
 
 ### 自动加载模型 运行程序
-`python annotate_raw_review.py tiiuae/falcon-7b`  
+`python annotate_raw_review.py google/gemma-7b`  
 
-### 得到模型文件   
+### 得到模型原始生成文本  
 `./raw_generation_output_ten-shot.txt`  
 
 ### 得到标注文件   
