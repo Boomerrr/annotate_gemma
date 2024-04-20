@@ -1,6 +1,6 @@
 # 快速开始
-## step1：下载模型
-`falcon模型下载地址 https://huggingface.co/google/gemma-7b`  
+## step1：下载模型(需要授权下载)
+`Gemma模型下载地址 https://huggingface.co/google/gemma-7b`  
 
 ### 模型文件存放位置  
 `./model-7b`  
